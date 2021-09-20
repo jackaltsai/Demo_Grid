@@ -36,6 +36,27 @@ class ViewController: UIViewController {
         section.contentInsets = NSDirectionalEdgeInsets(top: space, leading: space, bottom: space, trailing: space)
         return UICollectionViewCompositionalLayout(section: section)
     }
+    
+    
+    // itemSize 設為 fractionalWidth(0.5) & fractionalWidth(0.5 / 0.7)，實現寬度是高度的 0.7 倍
+    
+//    func generateLayout() -> UICollectionViewLayout {
+//        let space: Double = 5
+//        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalWidth(0.5 / 0.7))
+//        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+//        item.contentInsets = NSDirectionalEdgeInsets(top: space, leading: space, bottom: space, trailing: space)
+//                
+//        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(100))
+//                
+//        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+//                
+//        let section = NSCollectionLayoutSection(group: group)
+//                
+//        section.contentInsets = NSDirectionalEdgeInsets(top: space, leading: space, bottom: space, trailing: space)
+//                
+//        return UICollectionViewCompositionalLayout(section: section)
+//    }
+    
 }
 
 extension ViewController: UICollectionViewDataSource {
